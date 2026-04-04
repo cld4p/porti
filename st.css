@@ -1,5 +1,10 @@
 body {
     display: flexbox;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .main-title {
@@ -93,7 +98,7 @@ input[type="range"] {
     text-align: center;
 
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 30px;
 
     height: 20vw;
     width: 97%; 
@@ -101,7 +106,7 @@ input[type="range"] {
 }
 
 .i-image {
-    max-width: 30%;
+    max-width: 50%;
     height: auto;
     margin: 5px 0;
     border: 1px solid black;
@@ -127,3 +132,88 @@ input[type="range"] {
     font-family: Lexend Deca;
     font-weight: 400'
 }
+
+#nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid black;
+    border-radius: 20px;
+
+    height: 7vw;
+    width: 50%; 
+    margin: auto;
+}
+
+.nav-button {
+    border: 1px solid;
+    border-radius: 10px;
+    height: 3vw;
+    width: 12vw;
+    font-family: "Lexend Deca";
+    font-weight: 800;
+    font-size: 1.2vw;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.nav-button:hover {
+    box-shadow: 0 0 4vw #b5c6ffd7;
+    border-color: aquamarine;
+    background-color: rgb(193, 231, 238);
+}
+
+.nav-button[data-label="trail"]:hover {
+    box-shadow: 0 0 6vw #be0286bc;
+    border-color: rgb(110, 7, 95);
+    background-color: rgb(5, 2, 10);
+    color:white;
+}
+
+#text-container, #info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid black;
+    border-radius: 30px;
+
+    height: 34vh;
+    width: 97%; 
+    margin: auto;
+
+    font-family: Lexend Deca;
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+.hero-image {
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 28vw;
+    width: 48vw;
+
+    background-size: cover;
+}
+
+#footer {
+    margin: auto;
+    width: 100%;
+    height: 20vw;
+    background-color: rgb(8, 8, 26);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    color:aliceblue;
+
+    font-family: Workbench;
+    font-size: 2vw;
+    flex-direction: column;
+}
+
+
