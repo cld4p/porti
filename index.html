@@ -42,6 +42,9 @@
 </div>
 <canvas id="canvas" width="1000" height="500"></canvas>
 </div>
+
+<button id="topBtn" class="hidden">↥</button>
+
 <h3 class="pre-text" style="color:rgb(13, 13, 0)">Embrace your mistakes and let it guide you to<br>
     <span style="color:rgb(145, 123, 0); font-weight: 900; letter-spacing: 2px;">Something New</span></h3>
     
@@ -58,7 +61,7 @@
 <h3 class="pre-text" style="font-size: 2vw; line-height: 1px; letter-spacing: 5px; color:darkgreen">MAP</h3>
 <div id="nav-container">
     <button onClick="document.getElementById('proj-t').scrollIntoView();" class="nav-button">Tool Projects</button>
-    <button onClick="document.getElementById('info-container').scrollIntoView();" class="nav-button" data-label="trail">TRAIL</button>
+    <button onClick="document.getElementById('tra-t').scrollIntoView();" class="nav-button" data-label="trail">TRAIL</button>
     <button onClick="document.getElementById('lore-t').scrollIntoView();" class="nav-button">Lore</button>
     
 </div>
@@ -123,7 +126,7 @@
 <hr>
 <br>
 
-<h1 class="main-title">TRAIL</h1>
+<h1 class="main-title" id="tra-t" style="color:rgb(38, 0, 64)">TRAIL</h1>
 <div style="display: flex;
     flex-direction: row;
     align-items: center;

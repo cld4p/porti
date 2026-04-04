@@ -48,3 +48,20 @@ const canvas = document.getElementById('canvas');
         canvas.addEventListener('mouseup', finish);
         canvas.addEventListener('mousemove', draw);
         canvas.addEventListener('mouseleave', finish);
+
+
+const topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 500) {
+    topBtn.classList.remove("hidden");
+  } else {
+    topBtn.classList.add("hidden");
+  }
+};
+
+topBtn.onclick = function() {
+  window.scrollTo({
+    top: 0
+  });
+};
