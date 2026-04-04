@@ -1,0 +1,129 @@
+body {
+    display: flexbox;
+}
+
+.main-title {
+    font-family: "Oi";
+    font-weight: 400;
+    font-size: 3.5vw;
+    text-align: center;
+    line-height: 10px;
+    margin-top: 4vw;
+}
+
+.pre-text {
+    font-family: "Workbench";
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+#canvas-container {
+    border: 2px solid black;
+    width: 95%;
+    height: 65vh;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    background-image: url(canvas_bg.png);
+    background-size: cover;
+}
+
+#canvas {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    touch-action: none;
+    background-color: aliceblue;
+}
+
+#controls {
+    font-family: "Workbench";
+    color: rgba(104, 104, 104, 0.902);
+    margin-top: 30px;
+    margin-left: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column
+}
+
+#colorPicker{
+    border: 1px solid rgba(255, 255, 255, 0.749);
+    background-color: #a18d8d2c;
+    border-radius: 5px;
+    width: 6vw;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: #a18d8d2c;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 20px;
+}
+
+#clearCanvas {
+    border: 1px solid rgba(255, 255, 255, 0.749);
+    background-color: #a18d8d2c;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    color: rgba(104, 104, 104, 0.902);
+    font-family: "Workbench";
+}
+
+.dText {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    text-align: center;
+}
+
+.dTitle {
+    font-family: Workbench;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2vw;
+}
+
+#i-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    height: 20vw;
+    width: 97%; 
+    margin: auto;
+}
+
+.i-image {
+    max-width: 30%;
+    height: auto;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.i-image:hover {
+    scale:1.2;
+    box-shadow: 0 0 4vw #b5c6ffd7;
+}
+
+.i-title {
+    text-align: center;
+    font-family: Oi;
+    font-weight: 400;
+    font-size: 1.8vw;
+    line-height: 2px;
+}
+
+.i-text {
+    text-align: center;
+    font-family: Lexend Deca;
+    font-weight: 400'
+}
