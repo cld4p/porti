@@ -65,3 +65,29 @@ topBtn.onclick = function() {
     top: 0
   });
 };
+
+const darkMode = document.querySelectorAll('input[name="mode"]');
+
+const borderDivs = document.querySelectorAll('div');
+
+darkMode.forEach(d => {
+  d.addEventListener('change', (e) => {
+
+    borderDivs.forEach(div => {
+        const style = window.getComputedStyle(div);
+        const borderColor = style.borderColor;
+
+        if(borderColor=='rgb(0, 0, 0)') {
+          div.style.borderColor = 'white';
+        } else {
+          div.style.borderColor = 'black';
+        }
+      });
+
+    if (e.target.value === 'dark') {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  });
+});

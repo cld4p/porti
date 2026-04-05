@@ -1,11 +1,23 @@
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+}
+
 body {
-    display: flexbox;
-    margin: 0;
+  display: flexbox;
+  margin: 0;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
+
 
 .main-title {
     font-family: "Oi";
@@ -97,6 +109,17 @@ input[type="range"] {
 
 #topBtn:hover {
     color:brown
+}
+
+
+
+.r-sep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;  
+  margin: 2vw;
+  font-family: Workbench;
 }
 
 .hidden {
